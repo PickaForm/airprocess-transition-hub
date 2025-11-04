@@ -114,25 +114,15 @@ const Index = () => {
                 <p className="text-foreground">{t.newName}</p>
               </div>
 
-              {/* What Changes */}
               <div className="mb-8">
                 <h2 className="text-2xl font-bold text-primary mb-4 flex items-center gap-2">
                   <Sparkles className="w-6 h-6" />
                   {t.whatChanges}
                 </h2>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-foreground">{t.change1}</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-foreground">{t.change2}</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-foreground">{t.change3}</span>
-                  </li>
+                <ul className="space-y-3 list-disc list-inside">
+                  <li className="text-foreground">{t.change1}</li>
+                  <li className="text-foreground">{t.change2}</li>
+                  <li className="text-foreground">{t.change3}</li>
                 </ul>
               </div>
 
@@ -142,19 +132,10 @@ const Index = () => {
                   <CheckCircle2 className="w-6 h-6" />
                   {t.whatStays}
                 </h2>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-foreground">{t.stay1}</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-foreground">{t.stay2}</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-foreground">{t.stay3}</span>
-                  </li>
+                <ul className="space-y-3 list-disc list-inside">
+                  <li className="text-foreground">{t.stay1}</li>
+                  <li className="text-foreground">{t.stay2}</li>
+                  <li className="text-foreground">{t.stay3}</li>
                 </ul>
               </div>
 
