@@ -24,9 +24,13 @@ const Index = () => {
       <header className="border-b border-border">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-8">
-            <img src={pickaformLogo} alt="Pickaform" className="h-8" />
+            <div className="flex items-center">
+              <img src={pickaformLogo} alt="Pickaform" style={{ width: '256px', height: 'auto' }} />
+            </div>
             <TransitionArrow />
-            <img src={airprocessLogo} alt="AirProcess" className="h-8" />
+            <div className="flex items-center">
+              <img src={airprocessLogo} alt="AirProcess" style={{ width: '256px', height: 'auto' }} />
+            </div>
           </div>
           <LanguageSwitcher 
             currentLanguage={language} 
@@ -43,8 +47,37 @@ const Index = () => {
             <span className="text-sm font-medium">{t.announcement}</span>
           </div>
           
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-gradient">
-            {t.title}
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            {language === 'fr' ? (
+              <>
+                <span style={{ color: '#00aaee' }}>Pick</span>
+                <span style={{ color: '#a1ed00' }}>a</span>
+                <span style={{ color: '#00aaee' }}>form</span>
+                {' '}devient{' '}
+                <span style={{ color: '#00aaee' }}>Air</span>
+                <span style={{ color: '#ffffff' }}>Process</span>
+                {' '}!
+              </>
+            ) : language === 'en' ? (
+              <>
+                <span style={{ color: '#00aaee' }}>Pick</span>
+                <span style={{ color: '#a1ed00' }}>a</span>
+                <span style={{ color: '#00aaee' }}>form</span>
+                {' '}becomes{' '}
+                <span style={{ color: '#00aaee' }}>Air</span>
+                <span style={{ color: '#ffffff' }}>Process</span>
+              </>
+            ) : (
+              <>
+                <span style={{ color: '#00aaee' }}>Pick</span>
+                <span style={{ color: '#a1ed00' }}>a</span>
+                <span style={{ color: '#00aaee' }}>form</span>
+                {' '}se convierte en{' '}
+                <span style={{ color: '#00aaee' }}>Air</span>
+                <span style={{ color: '#ffffff' }}>Process</span>
+                {' '}!
+              </>
+            )}
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-12">
@@ -155,9 +188,13 @@ const Index = () => {
       <footer className="border-t border-border mt-20">
         <div className="container mx-auto px-4 py-8 text-center">
           <div className="flex items-center justify-center gap-8 mb-4">
-            <img src={pickaformLogo} alt="Pickaform" className="h-6 opacity-50" />
+            <div className="flex items-center opacity-50">
+              <img src={pickaformLogo} alt="Pickaform" style={{ width: '128px', height: 'auto' }} />
+            </div>
             <TransitionArrow />
-            <img src={airprocessLogo} alt="AirProcess" className="h-6" />
+            <div className="flex items-center">
+              <img src={airprocessLogo} alt="AirProcess" style={{ width: '128px', height: 'auto' }} />
+            </div>
           </div>
           <p className="text-sm text-muted-foreground">
             © 2024 AirProcess. All rights reserved.
