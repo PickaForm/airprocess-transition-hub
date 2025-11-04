@@ -1,6 +1,6 @@
 export const translations = {
   fr: {
-    title: "Pickaform devient AirProcess !",
+    title: "Pickaform devient AirProcess",
     subtitle: "Une nouvelle étape pour votre plateforme",
     announcement: "🚀 AirProcess : une nouvelle étape pour votre plateforme",
     intro: "Chers utilisateurs,",
@@ -48,7 +48,7 @@ export const translations = {
     redirectNote: "You will be redirected to app.airprocess.com"
   },
   es: {
-    title: "¡Pickaform se convierte en AirProcess!",
+    title: "Pickaform se convierte en AirProcess",
     subtitle: "Una nueva etapa para su plataforma",
     announcement: "🚀 AirProcess: una nueva etapa para su plataforma",
     intro: "Estimados usuarios,",

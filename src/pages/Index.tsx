@@ -56,7 +56,6 @@ const Index = () => {
                 {' '}devient{' '}
                 <span style={{ color: '#00aaee' }}>Air</span>
                 <span style={{ color: '#ffffff' }}>Process</span>
-                {' '}!
               </>
             ) : language === 'en' ? (
               <>
@@ -75,7 +74,6 @@ const Index = () => {
                 {' '}se convierte en{' '}
                 <span style={{ color: '#00aaee' }}>Air</span>
                 <span style={{ color: '#ffffff' }}>Process</span>
-                {' '}!
               </>
             )}
           </h1>
