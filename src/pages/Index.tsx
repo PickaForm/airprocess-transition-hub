@@ -186,7 +186,7 @@ const Index = () => {
       <footer className="border-t border-border mt-20">
         <div className="container mx-auto px-4 py-8 text-center">
           <div className="flex items-center justify-center gap-8 mb-4">
-            <div className="flex items-center opacity-50">
+            <div className="flex items-center">
               <img src={pickaformLogo} alt="Pickaform" style={{ width: '128px', height: 'auto' }} />
             </div>
             <TransitionArrow />
@@ -194,9 +194,6 @@ const Index = () => {
               <img src={airprocessLogo} alt="AirProcess" style={{ width: '128px', height: 'auto' }} />
             </div>
           </div>
-          <p className="text-sm text-muted-foreground">
-            © 2024 AirProcess. All rights reserved.
-          </p>
         </div>
       </footer>
     </div>
